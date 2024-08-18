@@ -1,0 +1,60 @@
+small{
+    font-size: 0.75rem;
+}
+.text-gray-600{
+    color: $gray-600;
+}
+.text-gray-900{
+    color: $gray-900;
+}
+.bg-gray-100{
+    background-color: $gray-100;
+}
+.px-2rem{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.py-2rem{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.me-2rem{
+    margin-right: 2rem;
+}
+.ms-4rem{
+    margin-left: 4rem;
+}
+.mb-4rem{
+    margin-bottom: 4rem;
+}
+.mt-2rem{
+    margin-top: 2rem;
+}
+.p-075rem{
+    padding: 0.75rem;
+}
+.mb-075rem{
+    margin-bottom: 0.75rem;
+}
+.w-35{
+    width: 35%;
+}
+.w-65{
+    width: 65%;
+}
+.gap-3{
+    gap: 1rem;
+}
+.custom-icon.dropdown-toggle::after{
+    display: none;
+}
+.icon-unfilled{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+.rounded-2px{
+    border-radius: 2px;
+}

@@ -1,0 +1,202 @@
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body card rounded-0 px-2rem py-2rem">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-4">
+            <img src="../assets/images/emir.jpeg" class="img-fluid object-fit-cover" alt="emir" style="width: 141px; height: 141px;">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body p-0">
+                    <div class="d-flex justify-content-between mb-075rem">
+                        <div>
+                            <p class="mb-2">#1</p>
+                            <p class="mb-0">Admin</p>
+                            <h4>Emir Wicks</h4>
+                            <small class="text-gray-600">emir.wicks@mail.com</small>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <small class="bg-gray-100 px-2 py-1">Verified</small>
+                        </div>
+                        <p class="d-inline-flex gap-1 mb-0">
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <span class="material-symbols-outlined text-success">
+                                    keyboard_arrow_down
+                                    </span>
+                            </button>
+                        </p>
+                 
+                    </div>
+                </div>
+            </div>
+            <div class="collapse" id="collapseExample">
+                <div class="card-body border-0 d-flex py-0">
+                    <button type="button" class="btn py-2 px-2rem btn-outline-danger ms-auto me-3">Deactivate</button>
+                    <button type="button" class="btn py-2 px-2rem btn-success">Edit</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal 2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content px-2rem">
+        <div class="modal-header border-bottom-0 mt-2rem">
+          <h1 class="modal-title fs-4 fw-bold" id="exampleModalLabel2">Edit Admin</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Account</p>
+                <label for="edit-name" class="form-label mb-1"><small>Name</small></label>
+                <input type="text" class="form-control rounded-2px border-dark" id="edit-name" value="Emir Wicks">
+                <label for="edit-email" class="form-label mb-1"><small>Email</small></label>
+                <input type="email" class="form-control rounded-2px border-dark" id="edit-email" value="emir.wicks@mail.com">
+            </div>
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Verification</p>
+                <div class="d-flex">
+                    <p class="fw-bold"><span class="material-symbols-outlined text-success">
+                        check_circle
+                        </span>Verified</p>
+                    <p class="ms-auto"><small>2020/4/12</small></p>
+                </div>
+                <button type="button" class="btn btn-outline-success w-100 rounded-2px" disabled>Send Verification Mail</button>
+            </div>
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Access Level</p>
+                <select class="form-select rounded-2px border-dark" aria-label="access-Level" id="admin-access-level">
+                    <option selected>-Choose access level-</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+            </div>
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Custom Access</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="lecture" id="edit-lecture">
+                    <label class="form-check-label" for="edit-lecture">
+                        Lecture
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="coupon" id="edit-coupon">
+                    <label class="form-check-label" for="edit-coupon">
+                        Coupon
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="message" id="edit-message">
+                    <label class="form-check-label" for="edit-message">
+                        Message
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="setting" id="edit-setting">
+                    <label class="form-check-label" for="edit-setting">
+                        Setting
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="task-menu" id="edit-task-menu">
+                    <label class="form-check-label" for="edit-task-menu">
+                        Task Menu
+                    </label>
+                </div>
+
+            </div>
+            <div class="mb-3">
+                <p class="fs-5 fw-bold">Deactivate Account</p>
+                <p class="fw-bold text-danger"><span class="material-symbols-outlined">
+                    warning
+                    </span>This cannot be undone!</p>
+                <button type="button" class="btn btn-outline-danger w-100 rounded-2px">Deactivate This Account</button>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-success border-2px py-2 px-2rem" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success border-2px py-2 px-2rem">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3 -->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content px-2rem">
+        <div class="modal-header border-bottom-0 mt-2rem">
+          <h1 class="modal-title fs-4 fw-bold" id="add-new-admin">New Admin</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Account</p>
+                <label for="new-admin-name" class="form-label mb-1"><small>Name</small></label>
+                <input type="text" class="form-control rounded-2px border-dark" id="new-admin-name">
+                <label for="new-admin-email" class="form-label mb-1"><small>Email</small></label>
+                <input type="email" class="form-control rounded-2px border-dark" id="new-admin-email">
+            </div>
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Verification</p>
+                <p class="fw-bold"><span class="material-symbols-outlined text-danger">
+                    warning
+                    </span>Unverified</p>
+                <button type="button" class="btn btn-outline-success w-100 rounded-2px">Send Verification Mail</button>
+            </div>
+            <div class="mb-3 border-bottom pb-4">
+                <p class="fs-5 fw-bold">Access Level</p>
+                <select class="form-select rounded-2px border-dark" aria-label="Default select example" id="add-access-level" disabled>
+                    <option selected>-Choose access level-</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                  </select>
+            </div>
+            <div class="mb-3">
+                <p class="fs-5 fw-bold">Custom Access</p>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="lecture" id="lecture">
+                    <label class="form-check-label" for="lecture">
+                        Lecture
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="coupon" id="coupon">
+                    <label class="form-check-label" for="coupon">
+                        Coupon
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="message" id="message">
+                    <label class="form-check-label" for="message">
+                        Message
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="setting" id="setting">
+                    <label class="form-check-label" for="setting">
+                        Setting
+                    </label>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input border-dark rounded-0 me-2" type="checkbox" value="task-menu" id="task-menu">
+                    <label class="form-check-label" for="task-menu">
+                        Task Menu
+                    </label>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-success border-2px py-2 px-2rem" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success border-2px py-2 px-2rem">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>

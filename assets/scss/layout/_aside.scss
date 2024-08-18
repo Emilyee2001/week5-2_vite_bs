@@ -1,0 +1,19 @@
+.navbar{
+    min-width: 296px;
+}
+.navbar-hover:hover{
+    background-color: $gray-400;
+}
+.navbar-active{
+    color: $success;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: " ";
+        background-color: $success;
+        width: 0.25rem;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
